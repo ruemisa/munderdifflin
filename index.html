@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Paper Planes, Inc.</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Special+Elite|Varela+Round" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/style.css" type="text/css">
+</head>
+<body top ="#" onload="firstAnimate()">
+<!-- something to wrap everything inside! -->
+    <div class="wrapper">
+
+      <!-- HEADER AREA -->
+
+      <header>
+
+        <!-- Company Logo -->
+
+        <h1 id="logo"><i class="far fa-paper-plane"></i><span id="brand">Paper Planes</span></h1>
+
+        <!-- MENU BAR (COLLAPSE) -->
+
+        <div class="main-menu">
+          <div class="menu-content">
+            <div class="menu-text" onclick="openMenu()">
+              <span>M</span>
+              <span>E</span>
+              <span>N</span>
+              <span>U</span>
+            </div>
+            <nav class="overlay" id="popMenu">
+              <a href="javascript:void[0]" class="closebtn" onclick="closeMenu()">&times;</a>
+              <div class="overlay-content">
+                  <a href="#">Products</a>
+                  <a href="#">About</a>
+                  <a href="#">Media</a>
+                  <a href="#">Contact</a>
+              </div>
+            </nav>
+          </div>
+        </div>
+
+        <div class="hero">
+
+          <div class="catchphrase">
+            <h1 class="hidden" id="catch-txt">We are not just office supplies.</h1>
+            <button class="btn-style" id="catch-btn" onclick="openContact()"><a href="#">Contact</a></button>
+          </div>
+
+          <div class="modalForm" id="contactForm">
+            <div class="formContent">
+              <a href="javascript:void[0]" id="close" onclick="closeContact()">&times;</a>
+              <h2>Contact Us</h2>
+              <form action="#" id="form" method="post" name="form">
+                <input type="name" type="text" placeholder="Name" id="name"><br>
+                <input type="email" type="text" placeholder="Email" id="email"> <br>
+                <textarea id="msg" name="message" placeholder="Message"></textarea> <br>
+                <a href="javascript:void[0]" id="submit" onclick="closeContact()">Submit</a>
+              </form>
+            </div>
+          </div>
+
+          <div class="hero-img">
+            <img src="images/plan3.png" alt="paper plane">
+          </div>
+
+        </div>
+
+      </header>
+
+
+      <!-- MAIN GRID -->
+
+      <div class="grid-container">
+
+        <!-- ABOUT WITH MISSION -->
+
+        <div class="about-grid">
+          <div class="about-text hidden" id="about">
+            <h2>Not just about paper</h2>
+            <p>
+              We value the environment. Our papers are made from 100% recycled materials. And adding to that, our CEO started the initiative to plant a tree for every product sold.
+            </p>
+            <button class="btn-style" id="about-link"><a href="#">Learn more</a></button>
+          </div>
+          <div class="about-img" id="about-pic">
+
+          </div>
+        </div>
+
+        <!-- PRODUCT TARGET GRID -->
+
+        <div class="client-grid">
+
+          <div class="target-grid">
+
+            <div class="target-text hidden" id="client">
+              <h2>Who we cater to</h2>
+              <p>
+                We produce a wide selection of paper products that cater to all individuals, not just those working in office spaces. Please feel free to take a look at our product selection.
+              </p>
+            </div>
+            <div class="targets hidden" id="target">
+              <div class="target-style">
+                <i class="fas fa-briefcase"></i>
+                <h3>Offices</h3>
+              </div>
+              <div class="target-style">
+                <i class="fas fa-palette"></i>
+                <h3>Artists</h3>
+              </div>
+              <div class="target-style">
+                <i class="fas fa-user-graduate"></i>
+                <h3>Students</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-grid">
+            <div class="feature">
+              <img src="images/card.jpeg" alt="Cards">
+              <div class="over-text">
+                <a href="#"><h3>Cards</h3></a>
+              </div>
+            </div>
+            <div class="feature">
+              <img src="images/sketch.jpeg" alt="Sketch Paper">
+              <div class="over-text">
+                <a href="#"><h3>Sketch Paper</h3></a>
+              </div>
+            </div>
+            <div class="feature">
+              <img src="images/origami.jpeg" alt="Origami Paper">
+              <div class="over-text">
+                <a href="#"><h3>Origami Paper</h3></a>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn-style product-link">See more</button>
+
+        </div>
+
+        <!-- EVENTS GRID -->
+
+        <div class="event-grid">
+          <h2 class="hidden" id="event-txt">List of Upcoming Events</h2>
+          <div class="events">
+            <div class="event-text" id="eventOne">
+              <a href="#">
+                <p>
+                  Forest Recovery: Tree Planting Event <br>
+                  Aug. 23, 2018
+                </p>
+              </a>
+            </div>
+            <div class="event-text" id="eventTwo">
+              <a href="#">
+                <p>
+                  Origami for Kids <br>
+                  Sept. 19, 2018
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FOOTER AREA -->
+
+      <footer>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Investors</a></li>
+          </ul>
+        </nav>
+
+        <nav class="social">
+          <ul>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fas fa-camera-retro"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+          </ul>
+        </nav>
+
+        <span class="copyright">&copy 2018 | Paper Planes, Inc. All rights reserved.</span>
+      </footer>
+
+
+    </div>
+  <script src="/javascript/main.js"></script>
+</body>
+</html>
