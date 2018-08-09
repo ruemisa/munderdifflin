@@ -1,6 +1,6 @@
 Paper Planes 
 
-Paper planes is a one-page layout for a fictional paper company (Munder Difflin), a graded assignment that we had for school.
+Paper planes is a one-page layout for a fictional paper company.
 
 It was created using the following technologies:
 
@@ -20,7 +20,7 @@ It is comprised of the following sections:
 
 The Menu button remains fixed throughout the site and opens up to the main navigation of the site (important pages)
 
-Author's note:
+Author's notes:
 
 I am still continually updating features on the website and applying what I have picked up in my course, as well as from other resources. 
 
