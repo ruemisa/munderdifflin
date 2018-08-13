@@ -1,6 +1,8 @@
-Paper Planes 
+Paper Planes
 
-Paper planes is a one-page layout for a fictional paper company.
+This is a one-page web design template for a paper supplier. 
+
+
 
 It was created using the following technologies:
 
