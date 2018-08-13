@@ -41,7 +41,7 @@
 
 
 .first-event {
-  background: url("/images/treeplant.jpg") no-repeat;
+  background: url("../images/treeplant.jpg") no-repeat;
   background-size: cover;
   background-position: auto;
   transform: scale(1.02);
@@ -51,7 +51,7 @@
 }
 
 .second-event {
-  background: url("/images/origami2.jpg") no-repeat;
+  background: url("../images/origami2.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   transform: scale(1.02);
@@ -64,15 +64,15 @@
 
 @keyframes pulse {
   0% {
-    background: url("/images/crumpled.jpg") no-repeat;
+    background: center / cover no-repeat url("../images/crumpled.jpg");
   }
 
   60% {
-    background: url("/images/paper.jpg") no-repeat;
+    background: center / cover no-repeat url("../images/paper.jpg");
   }
 
   100% {
-    background: url("/images/sprout.jpg") no-repeat;
+    background: center / cover no-repeat url("../images/sprout.jpg");
   }
 }
 
