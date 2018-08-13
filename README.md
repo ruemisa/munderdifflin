@@ -2,7 +2,7 @@ Paper Planes
 
 This is a one-page web design template for a paper supplier. 
 
-
+![alt text] url('munderdifflin/paper-1.png')
 
 It was created using the following technologies:
 
