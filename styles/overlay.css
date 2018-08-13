@@ -22,13 +22,13 @@
     padding: .5rem;
     text-decoration: none;
     font-size: 3.5rem;
-    color: rgba(245, 245, 220, 1);
+    color: var(--complementary-color);
     display: block;
     transition: 0.5s;
 }
 
 .overlay a:hover, .overlay a:focus {
-    color: rgba(34, 139, 34, 1);
+    color: var(--hover-color);
     transition: .7s;
     font-weight: 700;
 }
@@ -56,7 +56,7 @@
 
 .formContent {
   position: relative;
-  background-color: rgba(245, 245, 220, 1);
+  background-color: var(--complementary-color);
   margin: auto;
   padding: 2rem;
   width: 40%;
@@ -74,7 +74,7 @@
   width: 100%;
   padding: .5rem;
   margin-bottom: 1rem;
-  border: 1px solid rgb(0, 100, 0);
+  border: 1px solid var(--secondary-color);
   border-radius: .3rem;
 }
 
@@ -83,7 +83,7 @@
   height: 20vh;
   padding: 1rem;
   margin-bottom: 1.5rem;
-  border: 1px solid rgb(0, 100, 0);
+  border: 1px solid var(--secondary-color);
   border-radius: .3rem;
 }
 
@@ -102,7 +102,7 @@
 
 #submit {
   padding: .8rem 1.3rem;
-  background-color: rgba(0, 100, 0, .65);
+  background-color: var(--secondary-color);
   text-transform: uppercase;
   font-size: 1.1rem;
   font-family: 'Varela Round', sans-serif;
@@ -112,8 +112,8 @@
 }
 
 #submit:hover {
-  background-color: rgba(143, 188, 143, 1);
-  color: rgba(245, 245, 220, 1);
+  background-color: var(--main-color);
+  color: var(--complementary-color);
 }
 
 /* TEXT OVER FEATURE IMAGE */
@@ -128,7 +128,7 @@
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(143, 188, 143, 1);
+  background-color: var(--main-color);
 }
 
 .feature:hover .over-text {

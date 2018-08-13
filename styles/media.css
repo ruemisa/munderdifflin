@@ -1,0 +1,805 @@
+@media only screen and (min-width: 321px) and (max-width: 580px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "header"
+        "main"
+        "main"
+        "footer";
+    }
+
+    /* HEADER */
+
+    header {
+        grid-template-columns: var(--column-2);
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "logo menu"
+        "hero hero";
+        height: 40vh;
+    }
+    
+    #logo i {
+        font-size: 5rem; 
+        margin-top: 1rem;
+    }
+
+    #brand {
+        display: none;
+    }
+
+    .menu-text {
+        margin-right: 1rem;
+    }
+
+    .main-menu .menu-text > span {
+        font-size: .8rem;
+        padding: .2rem;
+    }
+
+    /* Hero Area */
+
+    .hero {
+        display: block;
+        position: relative;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .catchphrase #catch-txt {
+        position: absolute;
+        top: 8%;
+        left: 10%;
+        right: 10%;
+        text-align: center;
+        font-size: 2.3rem;
+    }   
+
+    .catchphrase #catch-txt::after {
+        content: "Not just office supplies";
+    }
+
+    #catch-btn {
+        display: none;
+    }
+
+    /* MAIN CONTENT */
+
+    .grid-container {
+        display: block;
+    }
+    
+    /* About area */
+
+    .about-grid {
+        display: block;
+        position: relative;
+    }
+
+    #about-title {
+        text-align: center;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        right: 15%;
+        font-size: 2rem;
+    }
+
+    .about-text #about-title::after {
+        content: "Not just Paper";
+    }
+
+    #about-para {
+        text-align: center;
+        position: absolute;
+        top: 70%;
+        left: 15%;
+        right: 15%;
+        font-size: 1.2rem;
+    }
+
+    .about-text #about-para::after {
+        content: "We value the environment. Our products are made from 100% recycled materials."
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    #about-link {
+        display: none;
+    }
+
+    /* Client and Product */
+
+    .client-grid {
+        position: relative;
+    }
+
+    .client-grid .target-grid {
+        display: block;
+    }
+
+    .target-grid .target-text {
+        margin: .5rem;
+        padding: 1rem;
+    }
+
+    .target-grid .target-text h2 {
+        padding: .5rem;
+        margin-bottom: .5rem;
+        font-size: 2rem;
+    }
+
+    .target-grid .target-text h2::after {
+        content: "We cater to"
+    }
+
+    .target-text p {
+        display: none;
+    }
+
+    .target-grid .targets {
+        flex-direction: row;
+    }
+
+    .targets .target-style h3 {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .client-grid .product-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        width: 70vw;
+        margin-left: 3.5rem;
+    } 
+
+    .product-grid .feature img {
+        width: 100%;
+        height: 20vh;
+    }
+
+    .product-link {
+        display: none;
+    }
+
+    /* Events grid */
+
+    .event-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "title"
+        "event";
+        margin-bottom: 5rem;
+    }
+
+    .event-grid #event-txt {
+        font-size: 2rem;
+    }
+
+    .event-grid #event-txt::after {
+        content: "Upcoming Events"
+    }
+
+    .event-grid .events {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .events .event-text p {
+        font-size: 1rem;
+    }
+
+    /* FOOTER */
+
+    .wrapper footer {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "social"
+        "copyright";
+    }
+
+    .site-nav {
+        display: none;
+    }
+
+    footer .copyright {
+        padding-bottom: 1rem;
+    }
+
+    /* Animations */ 
+    .slide-right {
+
+        animation: none;
+    }
+
+    .zoom-in {
+        animation: none;
+    }
+    
+    .fade-in-up {
+        animation: none;
+    }
+    
+    .fade-in {
+        animation: none;
+    }
+    
+    .roll-in {
+        animation: none;
+    }
+    
+    .fade-in-left {
+        animation: none;
+    }
+    
+}
+
+@media only screen and (min-width: 581px) and (max-width: 768px) {
+
+    .wrapper {
+        grid-template-columns: var(--column-2);
+        grid-auto-rows: var(--row-standard);
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "main main"
+        "footer footer";
+    }
+
+    /* HEADER */
+
+    header {
+        grid-template-columns: var(--column-2);
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "logo menu"
+        "hero hero";
+        height: 45vh;
+    }
+    
+    #logo i {
+        font-size: 5rem; 
+        margin-top: 1rem;
+    }
+
+    header #brand {
+        display: none;
+    }
+
+    .menu-text {
+        margin-right: 1rem;
+    }
+
+    .main-menu .menu-text > span {
+        font-size: 1.2rem;
+        padding: .2rem;
+    }
+
+    /* Hero Area */
+
+    .hero {
+        display: block;
+        position: relative;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .catchphrase #catch-txt {
+        position: absolute;
+        top: 8%;
+        left: 10%;
+        right: 10%;
+        text-align: center;
+        font-size: 2.3rem;
+    }   
+
+    .catchphrase #catch-txt::after {
+        content: "Not just office supplies";
+    }
+
+    #catch-btn {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* MAIN CONTENT */
+
+    .grid-container {
+        display: block;
+    }
+    
+    /* About area */
+
+    .about-grid {
+        display: block;
+        position: relative;
+    }
+
+    #about-title {
+        text-align: center;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        right: 15%;
+        font-size: 2rem;
+    }
+
+    .about-text #about-title::after {
+        content: "Not just Paper";
+    }
+
+    #about-para {
+        text-align: center;
+        position: absolute;
+        top: 70%;
+        left: 15%;
+        right: 15%;
+        font-size: 1.2rem;
+    }
+
+    .about-text #about-para::after {
+        content: "We value the environment. Our products are made from 100% recycled materials."
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    #about-link {
+        display: none;
+    }
+
+    /* Client and Product */
+
+    .client-grid {
+        position: relative;
+    }
+
+    .client-grid .target-grid {
+        display: block;
+    }
+
+    .target-grid .target-text {
+        margin: .5rem;
+        padding: 1rem;
+    }
+
+    .target-grid .target-text h2 {
+        padding: .5rem;
+        margin-bottom: .5rem;
+        font-size: 2rem;
+    }
+
+    .target-grid .target-text h2::after {
+        content: "We cater to"
+    }
+
+    .target-text p {
+        display: none;
+    }
+
+    .target-grid .targets {
+        flex-direction: row;
+    }
+
+    .targets .target-style h3 {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .client-grid .product-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        width: 70vw;
+        margin-left: 7.5rem;
+    } 
+
+    .product-grid .feature img {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .product-link {
+        display: none;
+    }
+
+    /* Events grid */
+
+    .event-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "title"
+        "event";
+        margin-bottom: 5rem;
+    }
+
+    .event-grid #event-txt {
+        font-size: 2rem;
+    }
+
+    .event-grid #event-txt::after {
+        content: "Upcoming Events"
+    }
+
+    .event-grid .events {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .events .event-text p {
+        font-size: 1rem;
+    }
+
+    /* FOOTER */
+
+    .wrapper footer {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "social"
+        "copyright";
+    }
+
+    .site-nav {
+        display: none;
+    }
+
+    footer .copyright {
+        padding-bottom: 1rem;
+    }
+
+    /* Animations */ 
+    
+    .fade-in-up {
+        animation: none;
+    }
+    
+    .fade-in {
+        animation: none;
+    }
+    
+    .roll-in {
+        animation: none;
+    }
+    
+    .fade-in-left {
+        animation: none;
+    }
+    
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .wrapper {
+        grid-template-columns: var(--column-2);
+        grid-auto-rows: var(--row-standard);
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "main main"
+        "footer footer";
+    }
+
+    /* HEADER */
+
+    header {
+        grid-template-columns: var(--column-2);
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "logo menu"
+        "hero hero";
+        height: 45vh;
+    }
+    
+    #logo i {
+        font-size: 5rem; 
+        margin-top: 1rem;
+    }
+
+    header #brand {
+        display: none;
+    }
+
+    .menu-text {
+        margin-right: 1rem;
+    }
+
+    .main-menu .menu-text > span {
+        font-size: 1.2rem;
+        padding: .2rem;
+    }
+
+    /* Hero Area */
+
+    .hero {
+        display: block;
+        position: relative;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .catchphrase #catch-txt {
+        position: absolute;
+        top: 8%;
+        left: 10%;
+        right: 10%;
+        text-align: center;
+        font-size: 2.3rem;
+    }   
+
+    .catchphrase #catch-txt::after {
+        content: "Not just office supplies";
+    }
+
+    #catch-btn {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* MAIN CONTENT */
+
+    /* About area */
+
+    .about-grid {
+        position: relative;
+    }
+
+    #about-title {
+        font-size: 2rem;
+    }
+
+    .about-text #about-title::after {
+        content: "Not just Paper";
+    }
+
+    #about-para {
+        font-size: 1.2rem;
+    }
+
+    .about-text #about-para::after {
+        content:  "We value the environment. Our products are made from 100% recycled materials. And adding to that, our CEO started the initiative to plant a tree for every product sold.";
+    }
+
+    .about-grid #about-link {
+        position: absolute;
+        bottom: 10%;
+        right: 20%;
+    }
+
+    /* Client and Product */
+
+    .client-grid {
+        position: relative;
+    }
+
+    .client-grid .target-grid {
+        display: block;
+    }
+
+    .target-grid .target-text {
+        margin: .5rem;
+        padding: 1rem;
+    }
+
+    .target-grid .target-text h2 {
+        padding: .5rem;
+        margin-bottom: .5rem;
+        font-size: 2rem;
+    }
+
+    .target-grid .target-text h2::after {
+        content: "We cater to"
+    }
+
+    .target-text p {
+        display: none;
+    }
+
+    .target-grid .targets {
+        flex-direction: row;
+    }
+
+    .targets .target-style h3 {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .client-grid .product-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        width: 70vw;
+        margin-left: 9.5rem;
+    } 
+
+    .product-grid .feature img {
+        width: 100%;
+        height: 45vh;
+    }
+
+    .product-link {
+        display: none;
+    }
+
+    /* Events grid */
+
+    .event-grid {
+        grid-template-columns: var(--column-2);
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "title title"
+        "event event";
+        margin-bottom: 5rem;
+    }
+
+    .event-grid #event-txt {
+        font-size: 2rem;
+        margin-left: 2.5rem;
+    }
+
+    .event-grid #event-txt::after {
+        content: "Upcoming Events"
+    }
+
+    .event-grid .events {
+        grid-template-columns: var(--column-2);
+        grid-gap: 3rem;
+        height: auto;
+        margin: 0 1rem;
+    }
+
+    .events .event-text p {
+        font-size: 1rem;
+    }
+
+    /* FOOTER */
+
+    .wrapper footer {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "social"
+        "copyright";
+        padding-top: 2rem;
+    }
+
+    .site-nav {
+        display: none;
+    }
+
+    footer .copyright {
+        padding-bottom: 1rem;
+    }
+
+    /* Animations */
+    .fade-in-up {
+        animation: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1380px) {
+
+    header #brand {
+        font-size: 1rem;
+    }
+
+    .menu-text {
+        margin-right: 1rem;
+    }
+
+    .main-menu .menu-text > span {
+        font-size: 1.2rem;
+        padding: .2rem;
+    }
+
+    /* Hero Area */
+
+    .hero-img {
+        margin-left: 5rem;
+    }
+    .hero-img img {
+        height: auto;
+        width: 100%;
+    }
+
+    .catchphrase #catch-txt {
+        font-size: 2.8rem;
+    }   
+
+    .catchphrase #catch-txt::after {
+        content: "We are not just office supplies."        
+    }
+
+    /* MAIN CONTENT */
+
+    /* About area */
+
+    .about-grid {
+        position: relative;
+    }
+
+    .about-text #about-title::after {
+        content: "Not just Paper";
+    }
+
+
+    .about-text #about-para::after {
+        content:  "We value the environment. Our products are made from 100% recycled materials. And adding to that, our CEO started the initiative to plant a tree for every product sold.";
+    }
+
+    .about-grid #about-link {
+        margin-left: 14rem;
+    }
+
+    /* Client and Product */
+
+    .target-grid .target-text {
+        margin: .5rem;
+        padding: 1rem;
+    }
+
+    .target-grid .target-text h2 {
+        padding: .5rem;
+        margin-bottom: .5rem;
+        font-size: 2.5rem;
+    }
+
+    .target-grid .targets {
+        flex-direction: row;
+    }
+
+    .targets .target-style h3 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+
+
+    /* Events grid */
+
+    .event-grid {
+        grid-template-columns: var(--column-2);
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "title title"
+        "event event";
+        margin-bottom: 5rem;
+    }
+
+    .event-grid #event-txt {
+        font-size: 2.5rem;
+        margin-left: 1rem;
+    }
+
+    .event-grid .events {
+        grid-template-columns: var(--column-2);
+        grid-gap: 3rem;
+        height: auto;
+        margin: 0 1rem;
+    }
+
+}
