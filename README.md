@@ -1,33 +1,79 @@
-Paper Planes 
+#**Paper Planes**# 
 
-Paper planes is a one-page layout for a fictional paper company.
+Paper planes is a one-page web layout template for a paper company that wishes to go green. 
 
-It was created using the following technologies:
+## Table of Contents ##
 
-* HTML
-* CSS
-* JavaScript 
+1. Technologies Used
+1. Images
+1. Web Page Components
+1. Author's Notes
+1. Author
+
+#### Technologies Used ####
+
+It was created using the following languages:
+
+* HTML5
+* CSS3
+* JavaScript  
+
+#### Images ####
+
+Here are some of the images of the web page:
+
+![Header/Hero](/images/web-images/paper-1.png) 
+![Contact Form](/images/web-images/paper-2.png)
+![Pop Up Menu Overlay](/images/web-images/paper-3.png)
+![Hover Effects](/images/web-images/paper-4.png)
+![Footer](/images/web-images/paper-6.png)
+
+#### Web Page Components ####
 
 It is comprised of the following sections:
 
-* Header -> where the Logo and menu (initially) are located
-* Hero/Jumbotron -> where the pitch/catch is located
-* About -> Short info about the company and its direction
-* Client -> Info about the target clients
-* Products -> Some of the products showcased and a button link towards the would-be product page
-* Events -> Upcoming company events open to the public
-* Footer -> Some site additional site navigation, social media links, copyright
+* Header 
+    * Company Logo 
+    * Menu's Initial Position that pops out into a Full Navigation Menu that links to other important pages
 
-The Menu button remains fixed throughout the site and opens up to the main navigation of the site (important pages)
+* Hero
+    * Company's Pitch
+    * Button that opens up a contact form
 
-Author's notes:
+* About 
+    * Company's guidance/direction/mission
+    * Button linking to About Page
 
-I am still continually updating features on the website and applying what I have picked up in my course, as well as from other resources. 
+* Clientele
+    * Main Target Audience of Company
 
-For one, the JavaScript needs more work to add better functionality.
+* Products
+    * Showcase main products of company
+    * Button Linking to Product Page
 
-Another thing is the organization of the CSS files. I want to improve on those as well.
+* Events
+    * Display Upcoming Events open to the public
 
-If you have any comments and suggestions, feel free to drop me a message. 
+* Footer 
+    * Additional Site Navigation
+    * Social Media Links
+    * Copyright Information
 
-Thank you.
+
+#### Author's Notes ####
+
+##### Updated #####
+
+I started implementing CSS variables on main.css. It is to organize things a lot better. 
+
+##### Road to Improvement #####
+
+Features are still being improved. Other pages will be added eventually. Separated the CSS into files based on purpose. 
+
+As always, comments and suggestions are welcome.
+
+Thank you very much for visiting.
+
+#### Author ####
+
+Ruel Alfonso Misa
