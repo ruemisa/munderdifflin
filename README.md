@@ -1,6 +1,6 @@
-#**Paper Planes**# 
+# Paper Planes #  
 
-Paper planes is a one-page web layout template for a paper company that wishes to go green. 
+Paper plan es is a one-page web layout template for a paper company that wishes to go green. 
 
 ## Table of Contents ##
 
